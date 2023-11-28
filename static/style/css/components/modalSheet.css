@@ -1,0 +1,64 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 999;
+}
+
+.navigation-scrim {
+    max-width: 60%;
+    width: 60%;
+    height: 100%;
+}
+
+.navigation-icon:hover {
+    cursor: pointer;
+}
+
+.modalSheet {
+    border-radius: 0 16px 16px 0;
+    max-width: 40%;
+    width: 40%;
+    height: 100%;
+    min-height: 100%;
+    display: inline-list-item;
+    justify-items: center;
+}
+
+.modalSheetItem {
+    display: flex;
+    border-radius: 0 32px 32px 0;
+    width: 100%;
+    height: 64px;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.modalSheetItem:hover {
+    cursor: pointer;
+}
+
+.closed {
+    visibility: collapse;
+}
+
+.screen {
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.linkLine {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}

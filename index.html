@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFD Homework | REST Principles</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="static/style/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/style/theme/theme.css">
+    <link rel="stylesheet" type="text/css" href="static/style/theme/colors.module.css">
+    <link rel="stylesheet" type="text/css" href="static/style/theme/typography.module.css">
+    <link rel="stylesheet" type="text/css" href="static/style/css/components/modalSheet.css">
+    <link rel="stylesheet" type="text/css" href="static/style/css/components/header.css">
+    <link rel="stylesheet" type="text/css" href="static/style/css/components/containers.css">
+    <link rel="stylesheet" type="text/css" href="static/style/css/components/info-card.css">
+
+    <script type="text/javascript" src="static/style/js/modalSheet.js"></script>
+    <script type="text/javascript" src="static/style/js/navigation.js"></script>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+</head>
+<body class="background"  onload="modalSheetSelect('about_rest', 'definitions','secondary-container')">
+<div class="scaffold">
+    <div class="floating-small-header on-surface-text surface">
+        <div class="header-container" id="icon"></div>
+        <div id="title" class="header-container-center headline-medium"></div>
+    </div>
+    <div id="screen" class="screen "></div>
+</div>
+<div id="navigation" class="navigation closed">
+    <div class="modalSheet background">
+        <div class="small-header on-surface-text">
+            <div class="header-container">
+                <span class="material-icons md-light navigation-icon padding-16" onclick="hideModalSheet()">close</span>
+            </div>
+            <div class="header-container-center headline-medium">
+                <img src="static/res/icons/icon.svg" alt="Mephi logo" height="96px">
+            </div>
+        </div>
+        <div id="about_rest"
+             class="modalSheetItem secondary-container on-secondary-container-text"
+             onclick="modalSheetSelect('about_rest', 'definitions','secondary-container')">
+            <span class="material-icons padding-16">api</span>
+            <p>
+                <b>REST principles</b>
+            </p>
+        </div>
+        <div id="definitions"
+             class="modalSheetItem on-surface-text"
+             onclick="modalSheetSelect('definitions', 'about_rest', 'secondary-container')">
+            <span class="material-icons padding-16">help_outline</span>
+            <p>
+                <b>Definitions</b>
+            </p>
+        </div>
+    </div>
+    <div class="navigation-scrim" onclick="hideModalSheet()"></div>
+</div>
+</body>
+</html>
