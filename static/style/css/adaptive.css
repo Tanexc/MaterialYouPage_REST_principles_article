@@ -1,0 +1,90 @@
+@media (max-width: 767px) {
+
+    .modalSheet {
+        min-width: 85%;
+        width: 85%;
+    }
+
+    .navigation-scrim {
+        min-width: 15%;
+        width: 15%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .base-column {
+        width: 100%;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+    .modalSheet {
+        min-width: 85%;
+        width: 85%;
+    }
+
+    .navigation-scrim {
+        min-width: 15%;
+        width: 15%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .base-column {
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .modalSheet {
+        min-width: 60%;
+        width: 60%;
+    }
+
+    .navigation-scrim {
+        min-width: 40%;
+        width: 40%;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .modalSheet {
+        min-width: 40%;
+        width: 40%;
+    }
+
+    .navigation-scrim {
+        min-width: 60%;
+        width: 60%;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .base-column {
+        width: 70%;
+    }
+
+}
+
+
+
+@media (min-width: 1400px) {
+
+
+
+}

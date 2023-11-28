@@ -1,10 +1,16 @@
 function showModalSheet() {
     const navigation = document.getElementById("navigation");
+    const body = document.getElementById("body");
+    window.scrollTo(0, 0);
+    body.classList.add("hide-overflow");
     navigation.classList.remove("closed");
+
 }
 
 function hideModalSheet() {
+    const body = document.getElementById("body");
     const navigation = document.getElementById("navigation");
+    body.classList.remove("hide-overflow");
     navigation.classList.add("closed");
 }
 
@@ -15,6 +21,7 @@ function modalSheetSelect(
 ) {
     const item = document.getElementById(elementId);
     const itemToDisable = document.getElementById(elementIdToDisable);
+
     if (!item.classList.contains(backgroundColor)) {
         item.classList.add(backgroundColor);
         item.classList.add("on-" + backgroundColor + "-text");
